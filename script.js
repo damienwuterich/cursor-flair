@@ -6,7 +6,12 @@ document.onmousemove = function (event) {
   output.innerHTML = `${x},${y}`;
 
   const circle = document.getElementById("circle");
-  circle.style.left = x;
-  circle.style.top = y;
-  circle.style.display = "initial";
+  circle.style.visibility = "visible";
+
+  const circleBox = circle.getBoundingClientRect();
+  const width = circleBox.width;
+  const height = circleBox.height;
+
+  circle.style.left = x - width / 2;
+  circle.style.top = y - height / 2;
 };

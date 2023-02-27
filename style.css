@@ -7,5 +7,5 @@ body {
 #circle {
   fill: blue;
   position: absolute;
-  display: none;
+  visibility: hidden;
 }
