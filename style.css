@@ -5,7 +5,8 @@ body {
 }
 
 #circle {
-  fill: blue;
+  fill: darkblue;
   position: absolute;
   visibility: hidden;
+  z-index: -1;
 }
