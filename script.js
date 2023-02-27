@@ -8,4 +8,5 @@ document.onmousemove = function (event) {
   const circle = document.getElementById("circle");
   circle.style.left = x;
   circle.style.top = y;
+  circle.style.display = "initial";
 };
